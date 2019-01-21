@@ -1,0 +1,21 @@
+{
+  "name": "drop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "ts-node": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "typescript": "^3.2.4"
+  },
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "Murthy Guruswamy <mur33kittu@gmail.com>",
+  "license": "ISC"
+}
